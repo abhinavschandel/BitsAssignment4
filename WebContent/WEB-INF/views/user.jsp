@@ -7,6 +7,6 @@
 <title>User Home Page</title>
 </head>
 <body>
-<h3>Hi ${userName}</h3>
+<h1>Hi ${userName}</h1>
 </body>
 </html>
