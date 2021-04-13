@@ -20,6 +20,7 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
+	try {
 		System.out.println("Home Page Requested, locale = " + locale);
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -27,7 +28,10 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 
 		model.addAttribute("serverTime", formattedDate);
-
+}catch (Exception e) {
+		e.printStackTrace();
+		// TODO: handle exception
+	}
 		return "home";
 	}
 
