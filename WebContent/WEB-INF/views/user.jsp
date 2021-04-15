@@ -7,6 +7,6 @@
 <title>Welcome</title>
 </head>
 <body>
-<h3>Hi ${userName}</h3>
+<h3 style="color:DodgerBlue;">Hi ${userName}</h3>
 </body>
 </html>
