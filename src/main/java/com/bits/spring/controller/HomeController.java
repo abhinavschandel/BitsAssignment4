@@ -27,6 +27,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 
 		model.addAttribute("serverTime", formattedDate);
+		model.addAttribute("message", "Welcome to Bits Pillani");
 
 		return "home";
 	}
