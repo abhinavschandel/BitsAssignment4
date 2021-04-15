@@ -9,7 +9,9 @@ public class User {
 	}
 
 	public void setUserName(String userName) {
+ 
 				System.out.println(userName);
+ 
 		this.userName = userName;
 	}
 	
