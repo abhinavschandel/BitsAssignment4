@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
 </head>
-<body>
+<body> 
 <h3 style="color:DodgerBlue;">Hi ${userName}</h3>
 </body>
 </html>
