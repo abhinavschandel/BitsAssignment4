@@ -13,12 +13,13 @@
 
 	<form action="user" method="post">
  
-		<input type="text" name="userName" placeholder="Enter your name" style="
-    margin: 1px 0px 8px 0px;
-"><br>
+		<input type="text" name="userName"><br> 
+		<input type="password" name="password" placeholder="Enter your password"><br>
+	 
 		<input type="submit" value="Login" style="
     margin: 14px 0px 0px 2px;
 ">
+ 
  
 	</form>
 </body>
