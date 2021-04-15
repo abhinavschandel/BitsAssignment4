@@ -25,15 +25,17 @@ public class HomeController {
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 
 		String formattedDate = dateFormat.format(date);
+		System.out.println("Display Formatted Date" + formattedDate);
 
 		model.addAttribute("serverTime", formattedDate);
+		model.addAttribute("message", "Welcome to Bits Pillani");
 
 		return "home";
 	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public String user(@Validated User user, Model model) {
-		System.out.println("User Page Requested");
+		System.out.println("User Page Loading...");
 		model.addAttribute("userName", user.getUserName());
 		return "user";
 	}
