@@ -23,7 +23,8 @@ public class HomeController {
 	try {
 		System.out.println("Home Page Requested, locale = " + locale);
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		//DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		DateFormat dateFormat = DateFormat.getDateInstance();
 
 		String formattedDate = dateFormat.format(date);
 
