@@ -40,6 +40,12 @@ public class HomeController {
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public String user(@Validated User user, Model model) {
+		Date date = new Date();
+		//DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		DateFormat dateFormat = DateFormat.getDateInstance();
+
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime1", formattedDate);
 		System.out.println("User Page Loading...");
 		model.addAttribute("userName", user.getUserName());
 		return "user";

@@ -8,7 +8,8 @@
 </head>
  
 <body> 
-<h3 style="color:DodgerBlue;">Hi ${userName}</h3>
 
+<h3 style="color:DodgerBlue;">Hi ${userName}</h3>
+<P>Today's Date is ${serverTime1}.</p>
 </body>
 </html>
