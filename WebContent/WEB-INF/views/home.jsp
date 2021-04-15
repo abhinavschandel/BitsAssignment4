@@ -12,9 +12,15 @@
 	<P>The time on the server is ${serverTime}.</p>
 
 	<form action="user" method="post">
+ 
 		<input type="text" name="userName"><br> 
 		<input type="password" name="password" placeholder="Enter your password"><br>
-		<input type="submit" value="Login">
+	 
+		<input type="submit" value="Login" style="
+    margin: 14px 0px 0px 2px;
+">
+ 
+ 
 	</form>
 </body>
 </html>
