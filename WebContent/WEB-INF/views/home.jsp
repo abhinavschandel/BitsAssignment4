@@ -9,7 +9,7 @@
 <body>
 	<h1>Hello BITS world!</h1>
 
-	<P>The time on the server is ${serverTime}.</p>
+	<%-- <P>The time on the server is ${serverTime}.</p> --%>
 
 	<form action="user" method="post">
  
