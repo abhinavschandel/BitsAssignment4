@@ -15,6 +15,8 @@
  
 		<input type="text" name="userName" placeholder="Enter your username"><br> 
 		<input type="password" name="password" placeholder="Enter your password"><br>
+		Date of Birth: <input type="date" class="form-control" id="dob"name="dob">
+        
 	 
 		<input type="submit" value="Login" style="
     margin: 14px 0px 0px 2px;
