@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>User Home Page</title>
+<title>Welcome</title>
 </head>
-<body>
-<h3>Hi ${userName}</h3>
+ 
+<body> 
+
+<h3 style="color:DodgerBlue;">Hi ${userName}</h3>
+<P>Today's Date is ${serverTime1}.</p>
 </body>
 </html>

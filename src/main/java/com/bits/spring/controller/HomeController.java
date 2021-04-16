@@ -20,20 +20,33 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
+	try {
 		System.out.println("Home Page Requested, locale = " + locale);
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		//DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		DateFormat dateFormat = DateFormat.getDateInstance();
 
 		String formattedDate = dateFormat.format(date);
 
+ 	model.addAttribute("message", "Welcome to Bits Pillani");
 		model.addAttribute("serverTime", formattedDate);
-
+}catch (Exception e) {
+		e.printStackTrace();
+		// TODO: handle exception
+	}
+ 
 		return "home";
 	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	public String user(@Validated User user, Model model) {
-		System.out.println("User Page Requested");
+		Date date = new Date();
+		//DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		DateFormat dateFormat = DateFormat.getDateInstance();
+
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime1", formattedDate);
+		System.out.println("User Page Loading...");
 		model.addAttribute("userName", user.getUserName());
 		return "user";
 	}
